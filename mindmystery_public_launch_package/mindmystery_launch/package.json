@@ -1,0 +1,15 @@
+{
+  "name": "mindmystery-launch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MindMystery timed reasoning challenge starter",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "stripe": "^17.7.0"
+  }
+}

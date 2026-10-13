@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Check your IQ-style reasoning skills with MindMystery: six timed rounds of logic, memory, patterns and problem solving.">
+<title>IQ Test — Check Your IQ Today | MindMystery</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="MindMystery home"><span class="brand-mark">✳</span> MindMystery</a>
+  <span class="header-note">SIX ROUNDS · QUICK THINKING</span>
+</header>
+<main class="wrap">
+  <section id="home" class="card hero">
+    <div class="eyebrow">CHECK YOUR IQ TODAY · THE MIND CHALLENGE</div>
+    <div class="brain" aria-hidden="true">🧠</div>
+    <h1>Check Your IQ Today</h1>
+    <p class="lead">Enter a world of hidden patterns, tricky equations, memory tests and quick-fire logic. Six timed rounds stand between you and your personal challenge report.</p>
+    <div class="stats"><div><b>18</b><span>Brain teasers</span></div><div><b>25 sec</b><span>Per question*</span></div><div><b>8–9 min</b><span>Target time</span></div></div>
+    <p class="small">No sign-up to start. Just you, the clock, and the challenge. This is a reasoning game, not a validated IQ test.</p>
+    <button id="start" class="primary">START THE CHALLENGE <span aria-hidden="true">→</span></button>
+  </section>
+
+  <section id="game" class="card" hidden>
+    <div class="game-head"><div><div id="category" class="eyebrow"></div><h2 id="roundName"></h2><p id="questionCount" class="small"></p></div><div class="timer-wrap"><span id="timer">25s</span><span class="eyebrow">TIME LEFT</span></div></div>
+    <div class="progress"><div id="timeProgress"></div></div>
+    <p id="hint" class="small"></p><div id="question" class="question"></div>
+    <div id="options" class="options"></div><p id="feedback" class="feedback" aria-live="polite"></p>
+    <button id="next" class="primary" hidden>CONTINUE →</button>
+  </section>
+
+  <section id="intermission" class="card center" hidden>
+    <div class="brain">⚡</div><div class="eyebrow">ROUND COMPLETE</div><h2 id="breakTitle">Nice work!</h2><p id="breakText" class="lead"></p><b id="breakScore"></b>
+    <button id="nextRound" class="primary">NEXT ROUND →</button>
+  </section>
+
+  <section id="results" class="card" hidden>
+    <div class="center"><div class="eyebrow">CHALLENGE COMPLETED</div><div class="brain">🏆</div><h1>Your results are ready.</h1><p class="lead">You've completed all six rounds. Unlock your detailed challenge report.</p></div>
+    <div class="result-preview"><div class="eyebrow">YOUR PERSONAL REPORT</div><div class="lock-symbol" aria-hidden="true">🔒</div><div class="locked-title">Your results are locked</div><p class="small">Your score and detailed breakdown will only appear in your report after a successful payment.</p><p class="small" style="margin-top:10px">This challenge measures game performance, not a scientifically validated IQ score.</p></div>
+    <h2>Unlock your detailed report</h2><p class="small">Includes your challenge score, answer explanations and a five-digit certificate of completion. This is not an accredited IQ certificate.</p>
+    <div class="price">A$1.99 <span>one-time payment</span></div>
+    <button id="unlock" class="primary">UNLOCK MY REPORT — A$1.99</button>
+    <p id="payNote" class="small center" aria-live="polite">Secure checkout will open when payments are configured.</p>
+    <div class="activity"><h3>Recent activity</h3><p class="small">Only genuine activity is displayed here. We do not invent customers, IQ scores or purchases.</p><div id="activityFeed" class="small muted">Loading activity…</div></div>
+    <button id="restart" class="secondary">↻ Play again</button>
+  </section>
+
+  <section id="report" class="card" hidden>
+    <div class="center"><div class="brain">🎓</div><div class="eyebrow">CERTIFICATE OF COMPLETION</div><h1>Brain Challenge</h1><p class="lead">Awarded for completing the MindMystery reasoning challenge</p></div>
+    <div class="certificate"><div class="eyebrow">MINDMYSTERY</div><h2>Certificate of Completion</h2><p>Presented to</p><p class="recipient">Challenge Participant</p><p>For completing the six-round reasoning challenge.</p><p>Certificate number</p><div id="certificateNumber" class="cert-number">—</div><p id="certificateScore"></p><p class="small">For entertainment purposes. Not a standardised IQ assessment or accredited qualification.</p></div>
+    <button id="backResults" class="primary">BACK TO REPORT</button>
+  </section>
+</main>
+<footer><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><span>© <span id="year"></span> MindMystery</span></footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
